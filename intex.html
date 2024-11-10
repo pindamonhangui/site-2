@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorhayneflix</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #ffebf1; /* Rosa claro */
+      color: #333; /* Texto em cinza escuro */
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ff007f; /* Rosa forte */
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 48px;
+      color: white;
+      margin: 0;
+    }
+
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 20px;
+      padding: 20px 0;
+      scrollbar-width: none; /* Para navegadores Firefox */
+    }
+
+    .carousel::-webkit-scrollbar {
+      display: none; /* Para navegadores Chrome, Safari */
+    }
+
+    .movie {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      text-align: center;
+      width: 250px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .movie:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .movie img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .movie img:hover {
+      transform: scale(1.05);
+    }
+
+    .movie a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      background-color: #ff007f; /* Rosa forte */
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .movie a:hover {
+      background-color: #ff4da6; /* Cor rosa mais clara ao passar o mouse */
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background-color: #ff007f; /* Rosa forte */
+      text-align: center;
+      padding: 10px;
+      color: white;
+    }
+
+    .category {
+      margin: 20px 0;
+    }
+
+    .category h2 {
+      color: #ff007f; /* Rosa forte */
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lorhayneflix</h1>
+  </header>
+
+  <div class="category">
+    <h2>Categoria 1</h2>
+    <div class="carousel">
+      <div class="movie">
+        <h2>Filme 1</h2>
+        <img src="novo-poster1.jpg" alt="Filme 1 Poster">
+        <br>
+        <a href="https://link-filme1.com" target="_blank">Assistir Filme 1</a>
+      </div>
+      <div class="movie">
+        <h2>Filme 2</h2>
+        <img src="novo-poster2.jpg" alt="Filme 2 Poster">
+        <br>
+        <a href="https://link-filme2.com" target="_blank">Assistir Filme 2</a>
+      </div>
+      <!-- Adicione mais filmes conforme necessário -->
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>Categoria 2</h2>
+    <div class="carousel">
+      <div class="movie">
+        <h2>Filme 3</h2>
+        <img src="novo-poster3.jpg" alt="Filme 3 Poster">
+        <br>
+        <a href="https://link-filme3.com" target="_blank">Assistir Filme 3</a>
+      </div>
+      <div class="movie">
+        <h2>Filme 4</h2>
+        <img src="novo-poster4.jpg" alt="Filme 4 Poster">
+        <br>
+        <a href="https://link-filme4.com" target="_blank">Assistir Filme 4</a>
+      </div>
+      <!-- Adicione mais filmes conforme necessário -->
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Lorhayneflix - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
